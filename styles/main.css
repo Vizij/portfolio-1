@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Rock+Salt');
+
+#navicon, #navMenu {
+  font-size: 1.1em;
+}
+
+#navicon {
+  padding-right: 16px;
+}
+
+#home, #about, #contact, footer {
+  background-color: black;
+  color: white;
+}
+
+#home {
+  background-position: 5% 5%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  height: 100vh;
+  margin-top: -3.5em;
+  text-align: center;
+  text-shadow: 2px 2px black, -1px -1px 1px black;
+}
+
+#home h1 {
+  margin-top: 40px;
+}
+
+#about p {
+  padding-top: 20px;
+}
+
+#skillset {
+  font-size: 3.5em;
+  padding-top: 20px;
+}
+
+#portfolio {
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+  padding: 80px 1px;
+}
+
+#portfolio .column {
+  margin: 10px auto;
+}
+
+#touchToggle {
+  background-color: white;
+  border: 2px dotted black;
+  border-radius: 20px;
+  color: black;
+}
+
+#contact {
+  padding-bottom: 20px;
+}
+
+#contact h3 {
+  text-align: right;
+}
+
+#email-form {
+  margin: 30px auto;
+}
+
+#submit {
+  border-radius: 4px;
+  font-size: 1.2em;
+  float: right;
+}
+
+.title-bar {
+  position: fixed !important;
+    z-index: 3;
+  width: 100%;
+}
+
+.title-bar-left {
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
+.subtitle {
+  font-size: 2em;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.portrait {
+  margin: 20px 5px;
+}
+
+.paneLink {
+  position: relative;
+    z-index: 2;
+}
+
+.paneFrame {
+  height: 300px;
+  position: relative;
+    z-index: -1;
+  width: 300px;
+}
+
+.paneFrame img {
+  position: absolute;
+    z-index: 0;
+}
+
+.pane {
+  color: white;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  height: 100%;
+  opacity: 1;
+  padding: 25px;
+  position: absolute;
+    z-index: 1;
+  text-align: center;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.pane * {
+  max-width: 100%;
+}
+
+a:hover .paneFrame .pane {
+  opacity: 0;
+}
+
+.linkBox {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  margin-top: 25px;
+}
+
+.linkIcon {
+  font-size: 3em;
+  text-align: center;
+  width: 62px;
+}
+
+.linkIconText {
+  color: white;
+  display: none;
+  margin-left: 15px;
+}
+
+a:hover .linkIconText span {
+  border-bottom: 2px solid #2199E8;
+}
+
+.current {
+  color: #FA52B1;
+}
+
+.current:hover {
+  color: white;
+}
+
+.ghost {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.scrawl {
+  font-family: 'Rock Salt', cursive;
+}
+
+.raspberry {
+  background-color: #BE335C;
+}
+
+.orange {
+  background-color: #CB7850;
+}
+
+.blueberry {
+  background-color: #078DAA;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  margin: 0;
+}
+
+section {
+  padding: 80px 25px;
+}
+
+label {
+  color: white;
+  font-size: 1.2em;
+  text-align: right;
+}
+
+footer {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+  #home {
+    background-image: url(../images/bg-small.jpg);
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  #navMenu ul li {
+    display: table-cell !important;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  #home {
+    background-image: url(../images/bg-medium.jpg);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .title-bar {
+    margin-top: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .linkBox {
+    display: flex;
+      justify-content: flex-start;
+  }
+
+  .linkIconText {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #home {
+    background-image: url(../images/bg-large.jpg);
+  }
+}
